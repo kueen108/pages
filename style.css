@@ -296,6 +296,41 @@ main {
     box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
 }
 
+/* Support Links */
+.app-support {
+    margin-bottom: 3rem;
+}
+
+.app-support h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.support-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.support-link {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.support-link:hover {
+    background: linear-gradient(135deg, #FF8500 0%, #FFC700 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 165, 0, 0.3);
+}
+
 /* Footer */
 footer {
     background: rgba(255, 255, 255, 0.95);

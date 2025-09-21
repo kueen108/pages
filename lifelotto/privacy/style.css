@@ -1,0 +1,365 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 2rem 0;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.back-link {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #764ba2;
+}
+
+/* Main Content */
+main {
+    padding-bottom: 3rem;
+}
+
+.policy-container {
+    background: white;
+    border-radius: 15px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.update-info {
+    background: #f0f4ff;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.update-info p {
+    color: #667eea;
+    font-weight: 500;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 3rem;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #667eea;
+}
+
+section h3 {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.intro {
+    background: #fafafa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.intro p {
+    font-size: 1.05rem;
+    color: #555;
+}
+
+.content {
+    padding-left: 1rem;
+}
+
+.content ul {
+    list-style-position: inside;
+    margin: 1rem 0;
+}
+
+.content li {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.content p {
+    margin: 1rem 0;
+    color: #555;
+}
+
+/* Highlight Box */
+.highlight {
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    margin: 1.5rem 0;
+}
+
+.highlight p {
+    margin: 0.5rem 0;
+    color: #444;
+}
+
+.highlight p:first-child {
+    font-size: 1.1rem;
+}
+
+/* Info Box */
+.info-box {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border: 1px solid #dee2e6;
+}
+
+.info-box p {
+    margin: 0;
+    color: #495057;
+}
+
+/* Contact Info */
+.contact-info {
+    background: #f0f4ff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.contact-info h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info li {
+    margin: 0.5rem 0;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+table th,
+table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+table th {
+    background: #667eea;
+    color: white;
+    font-weight: 500;
+}
+
+table td {
+    background: white;
+    color: #555;
+}
+
+table tr:nth-child(even) td {
+    background: #f8f9fa;
+}
+
+/* Remedy List */
+.remedy-list {
+    list-style: none;
+    padding: 0;
+}
+
+.remedy-list li {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 3px solid #667eea;
+}
+
+.remedy-list strong {
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    margin-top: 3rem;
+}
+
+footer p {
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .policy-container {
+        padding: 2rem 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    section h3 {
+        font-size: 1.1rem;
+    }
+
+    .content {
+        padding-left: 0;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    table th,
+    table td {
+        padding: 0.5rem;
+    }
+
+    .contact-info {
+        padding: 1.5rem;
+    }
+
+    .remedy-list li {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 0;
+    }
+
+    .policy-container {
+        padding: 1.5rem 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    header,
+    footer {
+        background: white;
+    }
+
+    .policy-container {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    a {
+        color: black;
+    }
+
+    .highlight,
+    .info-box,
+    .contact-info,
+    .remedy-list li {
+        border: 1px solid #ccc;
+    }
+}
