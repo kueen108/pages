@@ -260,6 +260,42 @@ main {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Policy Links */
+.app-policies {
+    margin-bottom: 3rem;
+}
+
+.app-policies h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.policy-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.policy-link {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 2px solid #667eea;
+    color: #667eea;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.policy-link:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+}
+
 /* Footer */
 footer {
     background: rgba(255, 255, 255, 0.95);
